@@ -1,0 +1,23 @@
+﻿@model IEnumerable<DatabaseSetupProject.Models.Policies>
+
+@{
+	ViewData["Title"] = "Index";
+}
+
+<h1 style="text-align: center;">Страхование</h1>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+	@foreach (var item in Model)
+	{
+
+		<div class="col" style="text-align: center;">
+			<div class="card shadow-sm">
+				<h1>@Html.DisplayFor(modelItem => item.PoliciesName)</h1>
+				<p>@Html.DisplayFor(modelItem => item.PoliciesDescription)</p>
+				<p>@Html.DisplayFor(modelItem => item.PoliciesType.PoliciesTypeName)</p>
+				<p><a asp-action="GetPolicie" asp-route-id="@item.Id">Застраховаться</a></p>
+			</div>
+		</div>
+
+	}
+</div>
+

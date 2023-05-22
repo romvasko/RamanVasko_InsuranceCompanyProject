@@ -1,0 +1,36 @@
+﻿@model DatabaseSetupProject.Models.BankPaymentPolicyOrder
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>BankPaymentPolicyOrder</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="PoliciesOrderId" class="control-label"></label>
+                <select asp-for="PoliciesOrderId" class="form-control" asp-items="ViewBag.PoliciesOrderId"></select>
+                <span asp-validation-for="PoliciesOrderId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BankPaymentId" class="control-label"></label>
+                <select asp-for="BankPaymentId" class="form-control" asp-items="ViewBag.BankPaymentId"></select>
+                <span asp-validation-for="BankPaymentId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

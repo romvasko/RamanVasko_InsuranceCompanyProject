@@ -1,0 +1,60 @@
+﻿@model IEnumerable<DatabaseSetupProject.Models.PoliciesOrder>
+
+@{
+    ViewData["Title"] = "ReportYear";
+}
+
+<h1>Отчет за @ViewBag.year год</h1>
+
+<p>За @ViewBag.year год заработанно @ViewBag.sum денег c @ViewBag.count клиентов</p>
+
+<a asp-action="ReportYear" asp-route-id="2020">2020</a>
+<a asp-action="ReportYear" asp-route-id="2021">2021</a>
+<a asp-action="ReportYear" asp-route-id="2022">2022</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UserId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PoliciesOrderDateTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cost)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PoliciesStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Policies)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PoliciesOrderDateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cost)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PoliciesStatus.StatusName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Policies.PoliciesName)
+            </td>
+            <td>
+
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

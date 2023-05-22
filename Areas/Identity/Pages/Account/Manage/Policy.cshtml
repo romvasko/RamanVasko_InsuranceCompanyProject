@@ -1,0 +1,57 @@
+﻿@page
+@model PolicyModel
+@{
+    ViewData["Title"] = "Полисы";
+    ViewData["ActivePage"] = ManageNavPages.Policy;
+}
+
+<h3>@ViewData["Title"]</h3>
+<partial name="_StatusMessage" for="StatusMessage" />
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Страховка
+            </th>
+
+            <th>
+                Цена
+            </th>
+            <th>
+                Статус заказа
+            </th>
+            <th>
+                Время заказа
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+	<tbody>
+		@foreach (var item in Model._model)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.Policies.PoliciesName)
+				</td>
+
+				<td>
+					@Html.DisplayFor(modelItem => item.Cost)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.PoliciesStatus.StatusName)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.PoliciesOrderDateTime)
+				</td>
+				@if (item.PoliciesStatus.StatusName == "Accepted")
+				{
+					<td>
+						<a class="btn-primary" asp-controller="Pay" asp-action="PayForPolicy" asp-route-id="@item.Id">Оплата</a>
+					</td>
+				}
+			</tr>
+		}
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Панель администратора";
+}
+<div class="container align-content-center">
+	<div class="row">
+		<a class="btn btn-warning btn-lg" asp-area="" asp-controller="OrdersApprove" asp-action="Index">Заказы на рассмотрение</a>
+	</div>
+	<div class="row">
+		<a class="btn btn-info btn-lg" asp-area="" asp-controller="Roles" asp-action="Index">Менеджер ролей</a>
+	</div>
+	<div class="row">
+		<a class="btn btn-primary btn-lg" asp-area="" asp-controller="PoliciesTypes" asp-action="Index">Типы полисов</a>
+	</div>
+	<div class="row">
+		<a class="btn btn-success btn-lg" asp-area="" asp-controller="Policies" asp-action="Index">Полисы</a>
+	</div>
+	<div class="row">
+		<a class="btn btn-warning btn-lg" asp-area="" asp-controller="PoliciesOrders" asp-action="Index">Заказы</a>
+	</div>
+	<div class="row">
+		<a class="btn btn-info btn-lg" asp-area="" asp-controller="PoliciesStatus" asp-action="Index">Статус Заказа</a>
+	</div>
+	<div class="row">
+		<a class="btn btn-primary btn-lg" asp-area="" asp-controller="CarPolicyOrders" asp-action="Index">Car</a>
+	</div>
+	<div class="row">
+		<a class="btn btn-success btn-lg" asp-area="" asp-controller="CarPolicyConditions" asp-action="Index">Автомобильные условия</a>
+	</div>
+	<div class="row">
+		<a class="btn btn-warning btn-lg" asp-area="" asp-controller="BankPaymentPolicyOrders" asp-action="Index">Банковские платежи</a>
+	</div>
+</div>

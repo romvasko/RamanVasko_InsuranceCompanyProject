@@ -1,0 +1,48 @@
+﻿@model CarPolicyViewModel
+@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManger
+@inject UserManager<IdentityUser> UserManager
+
+<h1>Auto</h1>
+<h2>@ViewBag.Error</h2>
+<form asp-action="AutoOrderCreate">
+	<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+	<div class="form-group">
+		<label asp-for="PoliciesId" class="control-label" hidden></label>
+		<input asp-for="PoliciesId" class="form-control" hidden />
+		<span asp-validation-for="PoliciesId" class="text-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="Cost" class="control-label" hidden></label>
+		<input asp-for="Cost" class="form-control" hidden/>
+		<span asp-validation-for="Cost" class="text-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="PoliciesStatusId" class="control-label" hidden></label>
+		<input asp-for="PoliciesStatusId" class="form-control" hidden />
+		<span asp-validation-for="PoliciesStatusId" class="text-danger"></span>
+	</div>
+
+	<div class="form-group">
+		<label asp-for="UserId" class="control-label" hidden></label>
+		<input asp-for="UserId" class="form-control" hidden />
+		<span asp-validation-for="UserId" class="text-danger"></span>
+	</div>
+
+	<div class="form-group form-check">
+		<label class="form-check-label">
+			<input class="form-check-input" asp-for="IsHadAccident" /> Попадали ли вы в аварии?
+		</label>
+	</div>
+	<div class="form-group">
+		<label asp-for="DriverAge" class="control-label">Возраст водителя</label>
+		<input asp-for="DriverAge" class="form-control" />
+		<span asp-validation-for="DriverAge" class="text-danger"></span>
+	</div>
+
+	<div class="form-group">
+		<input type="submit" value="Застраховаться" class="btn btn-primary" />
+	</div>
+
+</form>

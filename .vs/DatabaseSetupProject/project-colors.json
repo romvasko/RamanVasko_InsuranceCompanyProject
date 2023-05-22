@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e1de1e46-5833-492e-92b2-ae6e0d3a54a7": {
+      "ProjectGuid": "e1de1e46-5833-492e-92b2-ae6e0d3a54a7",
+      "DisplayName": "DatabaseSetupProject",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "a6a43300-f509-4587-82b5-fa928e97b5bb": {
+      "ProjectGuid": "a6a43300-f509-4587-82b5-fa928e97b5bb",
+      "DisplayName": "InsuranceCompanyProjectTests",
+      "ColorIndex": 1
+    },
+    "e6f807d8-62b5-4ba5-aa53-56a49b63a210": {
+      "ProjectGuid": "e6f807d8-62b5-4ba5-aa53-56a49b63a210",
+      "DisplayName": "InsuranceCompanyProjectTest",
+      "ColorIndex": 2
+    },
+    "279d05e5-428f-461e-ba57-74ec1108ac09": {
+      "ProjectGuid": "279d05e5-428f-461e-ba57-74ec1108ac09",
+      "DisplayName": "InsuranceCompanyTest",
+      "ColorIndex": 3
+    },
+    "cc8c9bd9-72c5-4350-99d2-059af3ac5ca1": {
+      "ProjectGuid": "cc8c9bd9-72c5-4350-99d2-059af3ac5ca1",
+      "DisplayName": "TestProject",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

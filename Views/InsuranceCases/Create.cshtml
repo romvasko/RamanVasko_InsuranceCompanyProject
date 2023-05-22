@@ -1,0 +1,37 @@
+﻿@model DatabaseSetupProject.Models.InsuranceCase
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Страховой случай</h1>
+
+<h4>InsuranceCase</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="PhoneNumber" class="control-label">Ваш номер телефона</label>
+                <input asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InsuranceCaseDescription" class="control-label">Опишите что произошло</label>
+                <textarea asp-for="InsuranceCaseDescription" class="form-control"></textarea>
+                <span asp-validation-for="InsuranceCaseDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserId" class="control-label" hidden></label>
+                <input asp-for="UserId" class="form-control" value="@User.Identity?.Name" hidden/>
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
