@@ -35,17 +35,17 @@ namespace DatabaseSetupProject.Data {
             modelBuilder.Entity<PoliciesType>().HasData(
                new PoliciesType[]
                {
-                    new PoliciesType {Id = 1, PoliciesTypeName = "Частные"},
-                    new PoliciesType {Id = 2, PoliciesTypeName = "Корпоративные"}
+                    new PoliciesType {Id = 1, PoliciesTypeName = "Private"},
+                    new PoliciesType {Id = 2, PoliciesTypeName = "Corporate"}
                });
 
             modelBuilder.Entity<Policies>().HasData(
                new Policies[]
                {
-                    new Policies {Id = 1, PoliciesName = "Автомобильное", PoliciesTypeId = 1,
-                        BaseCost = 1000M, PoliciesDescription = "Страхование автомобилей"},
-                    new Policies {Id = 2, PoliciesName = "Вклады", PoliciesTypeId = 2,
-                        BaseCost = 20000M, PoliciesDescription = "Страхование вкладов"}
+                    new Policies {Id = 1, PoliciesName = "Car insurance", PoliciesTypeId = 1,
+                        BaseCost = 1000M, PoliciesDescription = "Car insurance"},
+                    new Policies {Id = 2, PoliciesName = "Deposits insurance", PoliciesTypeId = 2,
+                        BaseCost = 20000M, PoliciesDescription = "Deposits insurance"}
                });
                 modelBuilder.Entity<PoliciesOrder>().HasData(
                new PoliciesOrder[]

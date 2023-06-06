@@ -29,7 +29,7 @@ namespace DatabaseSetupProject.Controllers
 
         public async Task<IActionResult> GetPolicie(int? id)
         {
-            if (_context.Policies.Where(p => p.Id == (int)id).Select(p => p.PoliciesName).FirstOrDefault() == "Автомобильное")
+            if (_context.Policies.Where(p => p.Id == (int)id).Select(p => p.PoliciesName).FirstOrDefault() == "Car insurance")
             {
                 return RedirectToAction("Auto", new CarPolicyViewModel { PoliciesId = (int)id });
             }
