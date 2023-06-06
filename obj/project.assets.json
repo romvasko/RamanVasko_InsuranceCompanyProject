@@ -10717,23 +10717,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Frankenstain\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Frankenstein\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Frankenstain\\source\\repos\\DatabaseSetupProject\\DatabaseSetupProject.csproj",
+      "projectUniqueName": "C:\\Users\\Frankenstein\\Source\\Repos\\RamanVasko_InsuranceCompanyProject\\DatabaseSetupProject.csproj",
       "projectName": "DatabaseSetupProject",
-      "projectPath": "C:\\Users\\Frankenstain\\source\\repos\\DatabaseSetupProject\\DatabaseSetupProject.csproj",
-      "packagesPath": "C:\\Users\\Frankenstain\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Frankenstain\\source\\repos\\DatabaseSetupProject\\obj\\",
+      "projectPath": "C:\\Users\\Frankenstein\\Source\\Repos\\RamanVasko_InsuranceCompanyProject\\DatabaseSetupProject.csproj",
+      "packagesPath": "C:\\Users\\Frankenstein\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Frankenstein\\Source\\Repos\\RamanVasko_InsuranceCompanyProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Frankenstain\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Frankenstein\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -10825,7 +10827,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
