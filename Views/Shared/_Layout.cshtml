@@ -35,20 +35,20 @@
 						@if (User.IsInRole("Admin"))
 						{
                             <li class="nav-item">
-								<a class="nav-link text-dark" asp-area="" asp-controller="AdminPanel" asp-action="Index">Панель Администратора</a>
+								<a class="nav-link text-danger" asp-area="" asp-controller="AdminPanel" asp-action="Index">Admin Panel</a>
 							</li>
 
 						}
                         @if (User.IsInRole("HR"))
 						{
                             <li class="nav-item">
-								<a class="nav-link text-dark" asp-area="" asp-controller="HR" asp-action="Index">Менеджер работников</a>
+								<a class="nav-link text-danger" asp-area="" asp-controller="HR" asp-action="Index">Employee Manager</a>
 							</li>
 						}
                         @if (User.IsInRole("Manager"))
 						{
                             <li class="nav-item">
-								<a class="nav-link text-dark" asp-area="" asp-controller="Manager" asp-action="Index">Менеджерам</a>
+								<a class="nav-link text-danger" asp-area="" asp-controller="Manager" asp-action="Index">For Managers</a>
 							</li>
 						}
 

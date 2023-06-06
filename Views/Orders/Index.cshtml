@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<DatabaseSetupProject.Models.Policies>
 
 @{
-	ViewData["Title"] = "Index";
+	ViewData["Title"] = "Order Insurance";
 }
 
-<h1 style="text-align: center;">Страхование</h1>
+<h1 style="text-align: center;">Insurance</h1>
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 	@foreach (var item in Model)
 	{
@@ -14,7 +14,7 @@
 				<h1>@Html.DisplayFor(modelItem => item.PoliciesName)</h1>
 				<p>@Html.DisplayFor(modelItem => item.PoliciesDescription)</p>
 				<p>@Html.DisplayFor(modelItem => item.PoliciesType.PoliciesTypeName)</p>
-				<p><a asp-action="GetPolicie" asp-route-id="@item.Id">Застраховаться</a></p>
+				<p><a asp-action="GetPolicie" asp-route-id="@item.Id">Order</a></p>
 			</div>
 		</div>
 
