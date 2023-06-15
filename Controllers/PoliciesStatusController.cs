@@ -11,8 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace DatabaseSetupProject.Controllers
 {
-    [Authorize(Roles = "Admin")]
-    [Authorize(Roles = "Manager")]
+    [Authorize(Roles = "Admin, Manager")]
     public class PoliciesStatusController : Controller
     {
         private readonly ApplicationDbContext _context;

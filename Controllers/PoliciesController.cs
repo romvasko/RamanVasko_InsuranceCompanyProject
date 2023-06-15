@@ -12,8 +12,7 @@ using DatabaseSetupProject.Service;
 
 namespace DatabaseSetupProject.Controllers
 {
-    [Authorize(Roles = "Admin")]
-    [Authorize(Roles = "Manager")]
+    [Authorize(Roles = "Admin, Manager")]
     public class PoliciesController : Controller, IPoliciesController
     {
         private readonly ApplicationDbContext _context;
