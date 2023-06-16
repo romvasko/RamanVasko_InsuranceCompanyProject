@@ -11,9 +11,8 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace DatabaseSetupProject.Controllers
 {
-    [Authorize(Roles = "Admin")]
-    [Authorize(Roles = "User")]
-    [Authorize(Roles = "Manager")]
+    [Authorize(Roles = "Admin, User, Manager")]
+
     public class InsuranceCasesController : Controller
     {
         private readonly ApplicationDbContext _context;

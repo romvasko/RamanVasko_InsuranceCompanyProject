@@ -6,8 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DatabaseSetupProject.Controllers
 {
-    [Authorize(Roles = "Admin")]
-    [Authorize(Roles = "Manager")]
+    [Authorize(Roles = "Admin, Manager")]
     public class ManagerController : Controller
     {
         private readonly ApplicationDbContext _context;
